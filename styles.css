@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #e2c5ff, #ffdcff, #e0b8ff);
+  height: 100vh;
+}
+
+.quiz-container {
+  display: inline-block;
+  text-align: center;
+}
+
+.quiz-container img{
+  width: 150px;
+  margin: 50px;
+}
+
+.question {
+  margin: 20px;
+}
+
+.button-answer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-answer h5{
+  padding: 30px;
+}
+
+.answer {
+  padding: 10px 20px;
+  margin: 30px 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  width: 180px;
+  height: 50px;
+  background-color: white;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#popup-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 130px;
+}
+
+#score{
+  margin: 10px 0;
+}
+
+#ok-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #e0b8ff;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 450px) {
+  body{
+    background: linear-gradient(to bottom, #e2c5ff, #ffdcff, #e0b8ff);    height: 131vh;
+    height: 100vh;
+  }
+
+  .quiz-container img{
+    width: 150px;
+    margin: 40px 0 20px;
+  }
+
+  .quiz-container h1{
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  #question-text {
+    background: white;
+    padding: 20px 30px;
+    margin: 25px 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .button-answer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-answer h5{
+    padding: 0;
+  }
+
+  .answer {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+  }
+
+}

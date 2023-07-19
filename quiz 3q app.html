@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <img src="./brain chip.png" alt="">
+    <h1>Quiz 3Q...</h1>
+    <div class="question" id="question-container">
+      <p id="question-text">Loading question...</p>
+      <div class="button-answer">
+        <button class="answer" onclick="checkAnswer(this)"></button>
+        <h5>or</h5>
+        <button class="answer" onclick="checkAnswer(this)"></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup">
+    <div id="popup-content">
+      <h2>Your Score:</h2>
+      <p id="score">0 out of 3</p>
+      <button id="ok-btn" onclick="reloadPage()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
